@@ -1,0 +1,59 @@
+:root {
+    --color-primary: rgb(248, 231, 241);
+    --color-secondary: rgb(251, 208, 236);
+    --color-accent: rgb(235, 67, 159);
+    --color-headings:rgb(42, 117, 42);
+    --color-body: rgb(74, 111, 74);
+}
+
+/* Cards */
+.card {
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px var(--color-secondary);
+    overflow: hidden;
+  }
+  
+  .card__header,
+  .card__body {
+    padding: 2rem 2rem;
+  }
+  
+  /* .card--primary .card__header {
+    background: var(--color-primary);
+    color: #fff;
+  } */
+  
+  .card--secondary .card__header {
+    background: var(--color-secondary);
+    color: var(--color-headings);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  /* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "Learn more-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+  font-size: 1rem;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
